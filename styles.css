@@ -1,0 +1,349 @@
+:root{
+    --main-font: arial;
+    --main-color: #0a0a1e;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--main-color);
+    font-family: var(--main-font);
+    margin: 1%;
+    
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(50px);
+    padding: 10px 20px;
+    transition: transform 0.6s ease;
+    position: sticky;
+    top: 10px;
+    margin-top: 0;
+}
+
+nav.active {
+    transform: translateX(0);
+}
+
+
+.logo {
+    color: rgb(255, 75, 4);
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ccc;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line1, .line2, .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px;
+    transition: all 0.3s ease;
+}
+
+.burger.active .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger.active .line2 {
+    opacity: 0;
+}
+
+.burger.active .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes moveimg {
+    from  {transform: translateY(0);}
+    to {transform: translateY(10px);}
+}
+
+#hero{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    height: 100vh;
+}
+#hero img{
+    border-radius: 50%;
+    max-width: 320px;
+    border: 0;
+    cursor: pointer;
+    animation:  moveimg 1s infinite;
+    animation-direction:alternate-reverse;
+}
+#hero h2, h4{
+    color: white;
+}
+#hero h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+#hero .info span{
+    color: rgb(255, 75, 4);
+    cursor:crosshair;
+}
+
+#hero h4{
+    font-size: 25px;
+    font-weight: 200;
+}
+#hero .info button{
+    padding: 10px;
+    box-shadow: black 0px 0px 3px;
+    border: 0px;
+    margin: 3px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#hero .info #buttoncv{
+    background-color: rgb(255, 75, 4);
+    color: white;
+}
+#hero .info #buttoncontact{
+    border: 1px solid black;
+}
+#hero .socials{
+    padding: 10px;
+    padding-left: 0px;
+}
+#hero .info .fa-github, .fa-instagram, .fa-facebook{
+    margin: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    color: white;
+}
+#hero .info .fa:hover{
+    color: rgb(255, 75, 4);
+}
+
+#about{
+    margin: auto;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8%;
+    color:#0a0a1e;
+    margin-top: 100px;
+}
+#about h2{
+    color: rgb(255, 75, 4);
+}
+#about h2 .fa:hover{
+    transition: 0.4s ease-in-out;
+    color: white;
+}
+
+#about p{
+    width: 75%;
+    justify-content: center;
+    text-align: justify;
+    color: white;
+    line-height: 25px;
+}
+#skill{
+    margin: auto;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.skills-section {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.skill-category {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    text-indent: 10px;
+    color: rgb(255, 75, 4);
+    margin-top: 20px;
+}
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.skill {
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight:normal;
+    color: #333;
+    transition: all 0.3s ease;
+    flex: 1 0 100px;
+}
+.skill:hover{
+    box-shadow: rgb(255, 75, 4) 2px 2px 6px;
+    transform:translateY(-3px);
+    border-radius: 0 10px 0 10px;
+}
+
+#portfolio{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+}
+#portfolio h2{
+    color: rgb(255, 75, 4);
+}
+#portfolio .portfolio-head{
+    max-width: 70%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.portfolio-items{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio .items{
+    background-image: url(img/Screenshot\ 2024-01-12\ 210304.png);
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    cursor:pointer;
+}
+.portfolio .items:hover{
+    transform: translateY(-5px);
+    box-shadow: rgb(255, 75, 4) 1px 1px 3px;
+}
+footer{
+    background-color:#0a0a1e;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    border-radius: 0 0 10px 10px;
+}
+footer .number, .email, .github{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 6px;
+}
+
+
+
+
+/*Mobile view */
+@media (max-width: 480px) {
+    .nav-links {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: row;
+        align-items: start;
+    }
+
+    .nav-links.active {
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+    }
+
+    .nav-links.active li {
+        margin: 10px 0;
+    }
+
+    .nav-links.active a {
+        color: white;
+    }
+    #hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #hero img{
+        width: 230px;
+    }
+   #hero h2{
+    font-size: 35px;
+   }
+   #hero h4{
+    font-size: 20px;
+   }
+   footer{
+   font-size: 7px;
+}
+    #portfolio .items{
+    max-width: 322px; 
+    min-width: 100px; 
+    } 
+}

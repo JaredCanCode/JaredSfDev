@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Responsive Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Jared <span><i class="fa fa-code"></i> </span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <img src="img/ProfilePic.jpg" alt="Me at the beach"/>
+        <div class="info">
+            <h2>Hi there! <span>I'm Jared. </span></h2>
+            <h4>I build Web and Desktop Applications</h4>
+            <button type="button" id="buttoncontact">Contact me</button>
+            <button type="button" id="buttoncv">Download CV</button>
+        <div class="socials">
+            <i class="fa fa-github"style="font-size:25px;"></i>
+            <i class="fa fa-instagram" style="font-size:25px;"></i>
+            <i class="fa fa-facebook" style="font-size:25px;"></i>
+        </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me <i class="fa fa-book"></i> </h2>
+        
+        <p>Hello, pals! I am Jared, an aspiring fullstack web developer. I am currently undergoing my OJT at Dona Alejandra Inc. I am based from Philippines, but I'm planning to go overseas for better salary. I am currently working on a project for my internship.</p>
+    </section>
+
+    <section id="skill">
+
+        <div class="skills-section">
+            <div class="skill-category">
+                Languages & Frameworks
+            </div>
+            <div class="skill-list">
+                <div class="skill">C/C++</div>
+                <div class="skill">Java</div>
+                <div class="skill">C++</div>
+                <div class="skill">.NET</div>
+                <div class="skill">CakePhp</div>
+
+            </div>
+            <div class="skill-category">
+                Web Development
+            </div>
+            <div class="skill-list">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">Node</div>
+                <div class="skill">Express</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Flutter</div>
+
+            </div>
+            <div class="skill-category">
+                Databases
+            </div>
+            <div class="skill-list">
+                <div class="skill">MySQL</div>
+                <div class="skill">Firebase</div>
+                <div class="skill">MongoDB</div>
+            </div>
+
+            <div class="skill-category">
+                Tools
+            </div>
+            <div class="skill-list">
+                <div class="skill">Figma</div>
+                <div class="skill">Canva</div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
+       <div class="portfolio-head">These are the projects I have made during my college days.</div>
+
+       <div class="portfolio-items">
+
+        <div class="items">
+        </div>
+        <div class="items">
+        </div>
+        <div class="items">
+        </div>
+        <div class="items">
+        </div>
+       </div>
+      </section>
+
+      <footer>
+        <div class="number">
+            <i class="fa fa-phone"></i>
+            <h4>Contact #: <span>+63 9664081067</span></h4> 
+        </div>
+        <div class="email">
+            <i class="fa fa-envelope"></i>
+            <h4>Email: <span>jaredsfdev@gmail.com</span></h4> 
+        </div>
+        <div class="github">
+            <i class="fa fa-github"></i>
+            <h4>Gitub: <span>JaredCanCode</span></h4> 
+        </div>
+      </footer>
+      
+
+      <script>
+        const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+});
+      </script>
+</body>
+</html>
